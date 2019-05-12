@@ -18,3 +18,7 @@ I_y(i, j) = max{ M(i, j - 1) + g(x_i, x_{i+1}) + s, I_y(i, j - 1) + s }
 - Perform globle sequencing algiment between two sequences.
 - Use affign gap penalty *(gap opening penalty and gap extension penalty)* 
 - The gap costs are dependent on the base pairs before and after the gap
+## Independent hypothesis weighting
+### Motivation
+- This draft analyze methylation and expresison of melanoma subtypes downloaded from TCGA cancer database. I first identified genes that are differencially methylated, and apply this as a covariate to weight the p-value calculated from differencially expression.
+- The weighted p-value is expected to have more rejections then BH adjusted p-value.
