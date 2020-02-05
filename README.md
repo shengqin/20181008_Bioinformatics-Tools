@@ -22,3 +22,12 @@ I_y(i, j) = max{ M(i, j - 1) + g(x_i, x_{i+1}) + s, I_y(i, j - 1) + s }
 ### Motivation
 - This draft analyze methylation and expresison of melanoma subtypes downloaded from TCGA cancer database. I first identified genes that are differencially methylated, and apply this as a covariate to weight the p-value calculated from differencially expression.
 - The weighted p-value is expected to have more rejections then BH adjusted p-value.
+## Permutation test for testing genetic associations.
+### Description
+- Given the following table, test if genotype(AA/AB/BB) is related to phenotype(case/control)
+
+|               | AA           | AB  |BB  |
+| ------------- |:-------------:| :-----:|:-----:|
+| Case| 72 | 96 |32|
+| Control      | 50      |   100 |50|
+
