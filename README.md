@@ -30,4 +30,6 @@ I_y(i, j) = max{ M(i, j - 1) + g(x_i, x_{i+1}) + s, I_y(i, j - 1) + s }
 | ------------- |:-------------:| :-----:|:-----:|
 | Case| 72 | 96 |32|
 | Control      | 50      |   100 |50|
-
+## Extract gene name from Gene Ontology
+- I first downloaded a list of genes from the GO term "hsa01001" from 'https://www.genome.jp/kegg-bin/get_htext?hsa01001'. 
+- Open the jupyter notebook 'get_kinase_gene.ipynb'. It has code that extracts the list of genes associated with the GO term "hsa01001".
